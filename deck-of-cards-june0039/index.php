@@ -53,8 +53,8 @@
   <div id="deck" class="deck">
     <?php for ($i = 0; $i < 52; $i++) : ?>
       <?php 
-      $suit = rand(0, count($suits) - 1);
-      $rank = rand(0, count($ranks) - 1);
+      $suit = $suits[rand(0, count($suits) - 1)];
+      $rank = $ranks[rand(0, count($ranks) - 1)];
       ?>
       <div class="card">
       <div class="number <?php echo $suit; ?>">
